@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Vollkorn', serif;
+  font-size: 16px;
+  background: linear-gradient(#0c2340, #1c3c63) fixed;
+}
+.position {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#main {
+  width: 80%;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+h1, h2 {
+  font-weight: 700;
+}
+h1 {
+  font-size: 40px;
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+}
+#img-div{
+  background-color: #aaa;
+  padding: 10px 30px;
+  border-radius: 10px;
+}
+img {
+  max-width: 50%;
+}
+#tribute-info {
+  padding: 0 10px;
+}
+#tribute-info p {
+  margin: 10px;
+}
+ul {
+  width: 70%;
+}
+.gallery {
+  width: 100%;
+  margin: 10px 0;
+}
+.images-wrapper {
+  width: 100%;
+  height: 165px;
+  background-color: #0c2340;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+}
+.wrapper {
+  flex: 1;
+  background-color: #fff;
+  padding: 3px;
+  border-radius: 3px;
+  margin: 0 4px;
+  text-decoration: none;
+  color: inherit;
+}
+.wrapper p {
+  margin: 5px 0 0 0!important;
+}
+.pic {
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#pic1 {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Maserati_quattroporte_%289073738499%29.jpg/320px-Maserati_quattroporte_%289073738499%29.jpg');
+}
+#pic2 {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Maserati_Ghibli_M157_Gold.jpg/320px-Maserati_Ghibli_M157_Gold.jpg');
+}
+#pic3 {
+  background-image: url('https://4.bp.blogspot.com/-bDFpITCaP8M/WmzW-TE_9NI/AAAAAAAAB1g/Ixa7urZqcscCr5cvV3uKblpEl-brvtsiwCLcBGAs/s1600/Maserati-Levante%2B%252812%2529.jpg');
+}
+#pic4 {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Maserati_Granturismo_-_Flickr_-_Alexandre_Pr%C3%A9vot_%289%29_%28cropped%29.jpg/320px-Maserati_Granturismo_-_Flickr_-_Alexandre_Pr%C3%A9vot_%289%29_%28cropped%29.jpg');
+}
+#pic5 {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Maserati_GranCabrio_-_Flickr_-_Alexandre_Pr%C3%A9vot_%286%29_%28cropped%29.jpg/320px-Maserati_GranCabrio_-_Flickr_-_Alexandre_Pr%C3%A9vot_%286%29_%28cropped%29.jpg');
+}
+
+@media screen and (max-width: 1000px) {
+  .wrapper {
+    flex: 0 1 30%;
+    margin: 4px 0;
+  }
+  .pic {
+    height: 100px;
+  }
+  .images-wrapper {
+    height: auto;
+    justify-content: space-around;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #img-div {
+    padding: 10px;
+  }
+  #hq {
+    max-width: 100%;
+  }
+  .wrapper {
+    width: 100%;
+    flex: 1 auto;
+    margin: 4px 0;
+  }
+  .pic {
+    height: 100px;
+  }
+}
